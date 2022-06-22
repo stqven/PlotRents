@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PR">
+    <output-path>$PROJECT_DIR$/../../MCH/Backup10-2020/Hub/plugins</output-path>
+    <root id="archive" name="PR.jar">
+      <element id="module-output" name="PR" />
+    </root>
+  </artifact>
+</component>

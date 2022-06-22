@@ -1,0 +1,6 @@
+default_rental_icon: 'WARPED_NYLIUM'
+default_market_icon: 'CRIMSON_NYLIUM'
+min_list_duration: '1h'
+min_area_blocks_x: 2
+min_area_blocks_y: 2
+min_area_blocks_z: 2

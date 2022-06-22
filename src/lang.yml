@@ -1,0 +1,86 @@
+# LEAVE ANY FIELD EMPTY IF YOU WANT TO STOP THEIR MESSAGE FROM BEING SENT
+Messages:
+  Prefix: '&8| &ePlotRents &8|&7'
+  update_icon_success: '%prefix &aIcon has been updated successfully'
+  item_already_taken: '%prefix &cThis item is already taken'
+  successfully_removed_item: '%prefix &aThis item has been successfully removed from the listing'
+  no_money: "%prefix &cYou don't have enough money to buy this"
+  no_access: "%prefix &cYou don't have access to this area!"
+  min_area: '%prefix &cYour area should have a minimum space of &e%xx%yx%z'
+  no_perms: "%prefix &cYou don't have enough permissions to execute this command"
+  currency_modified: '%prefix &aCurrency has been successfully modified'
+  no_hand: "%prefix &cYou don't have an item in your main hand"
+  home:
+    set_success: '%prefix &aA new home has been set for &e%id'
+    set_not_owner: '%prefix &eID: %id &cdoes not exist!'
+    set_not_exist: "%prefix &cYou don't own the region with id &e%id"
+    set_not_inside: '%prefix &cHome location should be located inside your region'
+    not_set: '%prefix &cHome location is not set yet, you have been randomly teleported inside the region'
+    teleport_success: "%prefix &aYou have been teleported to &e%id&a's home"
+    rent_success: "%prefix &aYou have rented a region for &e%price"
+
+  wand:
+    loc1:
+      msg: '%prefix First Location is set to (&e%x&7, &e%y&7 &e%z&7)'
+      hover: '&eCLICK TO TELEPORT'
+    loc2:
+      msg: '%prefix Second Location is set to (&e%x&7, &e%y&7 &e%z&7)'
+      hover: '&eCLICK TO TELEPORT'
+    not_set:
+      '1': '%prefix &cThe first point is not set yet!'
+      '2': '%prefix &cThe second point is not set yet!'
+    not_same:
+      '1': '%prefix &cThe first point has been removed because it''s located in another
+        plot'
+      '2': '%prefix &cThe second point has been removed because it''s located in
+        another plot'
+    not_owner: '%prefix &cThe selection should be inside your own area!'
+
+  listing:
+    success: '%prefix &aThe selected region is successfully listed for &e%duration &aand &e$%price (id: %id)'
+    not_found: '%prefix &cThere are not areas available for sale at the moment'
+    cross: '%prefix &cThis region intersects with other regions'
+    duration_error: '%prefix &cRenting duration must be at least %duration'
+
+  rental:
+    not_found: "%prefix &cYou don't have any areas yet, rent some with &e/rents market"
+    expired: '%prefix &cA rent with id &e%id &cis expired'
+  commands:
+    msg:
+      - '%prefix &b/Rents wand &8* &7Gives you a selection stick'
+      - '%prefix &b/Rents myRents &8* &7Your current rents'
+      - '%prefix &b/Rents market &8* &7The available regions for sale'
+      - '%prefix &b/Rents list [duration] [price] &8* &7Rent your region'
+      - '%prefix &b/Rents setHome [id] &8* &7Set a teleport point for id'
+      - '%prefix &b/Rents setCurrency &8* &7Change the currency item'
+    hover: '&eCLICK TO BIND'
+
+Inventory:
+  market:
+    display_name: '&8* &e%id &8*'
+    others_lore:
+      - '&8» &fOwner: &e%owner'
+      - '&8» &fPlot: &e%plot'
+      - '&8» &fDuration: &e%duration'
+      - '&8» &fPrice: &e%price'
+      - ''
+      - '&eLEFT-CLICK &7to buy'
+      - '&eRIGHT-CLICK &7to teleport'
+    owner_lore:
+      - '&8» &fOwner: &eYOU'
+      - '&8» &fPlot: &e%plot'
+      - '&8» &fDuration: &e%duration'
+      - '&8» &fPrice: &e%price'
+      - ''
+      - '&eLEFT-CLICK &7to edit icon'
+      - '&eRIGHT-CLICK &7to teleport'
+      - '&eSHIFT-CLICK &7to remove'
+      -
+  my_rents:
+    display_name: '&8* &e%id &8*'
+    lore:
+      - '&8» &fPlot: &e%plot'
+      - '&8» &fRemaining Time: &e%remainingTime'
+      - ''
+      - '&eLEFT-CLICK &7to edit icon'
+      - '&eRIGHT-CLICK &7to teleport'

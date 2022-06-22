@@ -1,0 +1,25 @@
+#(item_type) FIELD VALUES CAN BE FOUND AT: https://helpch.at/docs/1.8/org/bukkit/Material.html
+# LEAVE (display_name) AND (lore) FIELDS EMPTY IF YOU WANT TO SET THE MTO THEIR DEFAULT VALUES
+Currency:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2975
+  type: EMERALD
+Wand:
+  display_name: '&eSelection Wand'
+  item_type: STICK
+  lore: ''
+Refresh:
+  display_name: '&aRefresh'
+  item_type: EMERALD
+  lore:
+    - '&7Refresh the current page'
+PreviousPage:
+  display_name: '&e« Previous Page'
+  item_type: BOOK
+  lore:
+    - '&7Go to the previous page'
+NextPage:
+  display_name: '&eNext Page »'
+  item_type: BOOK
+  lore:
+    - '&7Go to the next page'
